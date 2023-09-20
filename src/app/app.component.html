@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Angular Ejemplo1</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>
+          Hola mundo Angular
+      </h1>
+  </div>
+  <div>
+      {{title}}
+  </div>
+  <div>
+      la suma de 2 + 2 es {{2+2}}
+  </div>
+  <div>
+      El sobel de 3 es {{duplicarNumero(3)}}
+  </div>
+  <br>
+  <div>
+      <h2>
+          Datos de la pelicula 
+      </h2>
+      <div>
+        {{pelicula.titulo | uppercase}}
+      </div>
+      <div>
+        {{pelicula.fechadeLanzamiento | date: "dd-MM-yy"}}
+      </div>
+      <div>
+        {{pelicula.precio | currency}}
+      </div>
+  </div>
+</div>
+</body>
+</html>
