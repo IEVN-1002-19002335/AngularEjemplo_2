@@ -9,35 +9,11 @@
 </head>
 <body>
   <div class="container">
-    <div>
-      <h1>
-          Hola mundo Angular
-      </h1>
-  </div>
-  <div>
+    <div class="row">
       {{title}}
+      <app-product-list></app-product-list>
+    </div>
   </div>
-  <div>
-      la suma de 2 + 2 es {{2+2}}
-  </div>
-  <div>
-      El sobel de 3 es {{duplicarNumero(3)}}
-  </div>
-  <br>
-  <div>
-      <h2>
-          Datos de la pelicula 
-      </h2>
-      <div>
-        {{pelicula.titulo | uppercase}}
-      </div>
-      <div>
-        {{pelicula.fechadeLanzamiento | date: "dd-MM-yy"}}
-      </div>
-      <div>
-        {{pelicula.precio | currency}}
-      </div>
-  </div>
-</div>
+
 </body>
 </html>
